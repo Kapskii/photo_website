@@ -250,7 +250,7 @@ body {
 }
 
 .imageCamera {
-    background: url(/assets/textBlock.jpeg), lightgray 50% / cover no-repeat;
+    background: url(./assets/textBlock.jpeg), lightgray 50% / cover no-repeat;
     background-size: contain;
 }
 
