@@ -417,6 +417,10 @@ body {
     cursor: pointer;
 }
 
+.button-tools {
+    margin-top: 20px;
+}
+
 .small {
     color: #C0C0C0;
     font-family: 'Poppins', sans-serif;
