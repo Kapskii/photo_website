@@ -5,8 +5,10 @@
     font-family: 'Poppins', sans-serif;
 }
 
+
 body {
     background: black;
+    overflow-x: hidden;
 }
 
 .swiper-button-prev::after,
@@ -250,6 +252,10 @@ a:hover {
     position: relative;
 }
 
+.item:hover .itemText {
+    color: #C0C0C0;
+}
+
 .itemTitle {
     position: absolute;
     color: white;
@@ -263,7 +269,7 @@ a:hover {
 
 .itemText {
     position: absolute;
-    color:transparent;
+    color: transparent;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
@@ -286,9 +292,7 @@ a:hover {
     padding-top: 40px;
 }
 
-.item:hover .itemText{
-    color: #C0C0C0;
-}
+
 
 .information2 {
     display: grid;
@@ -384,13 +388,6 @@ a:hover {
     justify-content: space-between;
 }
 
-.footer-navigater {
-    display: flex;
-    justify-content: center;
-
-}
-
-
 .footer-navBar {
     display: block;
     line-height: 30px;
@@ -453,4 +450,120 @@ a:hover {
 
 .Facebook:hover {
     fill: #3b5998;
+}
+
+
+
+
+/* для планшета */
+@media only screen and (min-width: 577px) and (max-width: 992px) {
+
+
+    .header-wrapper {
+        display: flex;
+        width: 100%;
+        height: 90px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .image {
+        width: 100%;
+        height: 822px;
+        position: relative;
+    }
+
+    .wraper {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        margin: 0;
+    }
+
+
+    .inform-wrapper {
+        margin-bottom: 20px;
+    }
+
+    .item {
+        display: block;
+        width: 364px;
+        height: 365px;
+        position: relative;
+    }
+
+    .itemTitle {
+        position: absolute;
+        color: white;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 2px;
+        top: 50%;
+        left: 5%;
+        text-transform: uppercase;
+    }
+
+    .itemText {
+        position: absolute;
+        color: #C0C0C0;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px;
+        left: 5%;
+        top: 57%;
+        width: 90%;
+    }
+
+    .text-block {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 312px;
+        margin-top: 113px;
+        margin-left: 40px;
+        box-sizing: border-box;
+    }
+
+    .client-wrapper {
+        padding-left: 16px;
+        padding-right: 16px;
+        width: 100%;
+        height: max-content;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .logo-wrapper {
+        display: flex;
+        gap: 23px;
+        margin-top: 40px;
+        padding: 40px;
+        align-items: center;
+    }
+
+    .footer {
+        width: 100%;
+        height: 700px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 10px;
+    }
+
+    .footer-navigater {
+        margin-right: -100px;
+        ;
+    }
+}
+
+
+
+
+/* для мобильного телефона */
+@media only screen and (max-width: 576px) {
+
 }
