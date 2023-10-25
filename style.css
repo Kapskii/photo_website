@@ -155,7 +155,6 @@ a:hover {
     color: #C0C0C0;
     text-align: center;
     font-size: 14px;
-    font-style: normal;
     line-height: 20px;
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -315,7 +314,7 @@ a:hover {
 
 }
 
-.imageCameraSmall{
+.imageCameraSmall {
     display: none;
 }
 
@@ -409,13 +408,21 @@ a:hover {
     border-bottom: 2px solid #9e9e9e;
 }
 
+.footerText{
+    width: 50%;
+}
+
+.footerInput {
+    width: 50%;
+}
+
 .inputForm {
     position: relative;
 }
 
 .inputEmail {
     display: block;
-    width: 458px;
+    width: 100%;
     height: 52px;
     border-radius: 12px;
     border: 1px solid #E5E7EB;
@@ -502,7 +509,7 @@ a:hover {
     .itemTitle {
         position: absolute;
         color: white;
-        font-size: 50px;
+        font-size: 40px;
         line-height: 20px;
         letter-spacing: 2px;
         top: 50%;
@@ -580,19 +587,173 @@ a:hover {
     border-bottom: 2px solid #9e9e9e;
 }
 
-/* .information2 {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr;
-    width: 100%;
-    height: 100%;
-} */
-
-
-
-
 
 /* для мобильного телефона */
 @media only screen and (max-width: 576px) {
 
+    .image {
+        width: 100%;
+        height: 740px;
+        position: relative;
+    }
+
+    .swiper-text-wrapper {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        margin-bottom: 71px;
+    }
+
+    .title {
+        color: #FFF;
+        text-align: center;
+        font-size: 25px;
+    }
+
+    .title-help {
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+
+    .subTitle {
+        color: #C0C0C0;
+        text-align: center;
+        font-size: 10px;
+        line-height: normal;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+    }
+
+
+    .itemTitle {
+        position: absolute;
+        color: white;
+        font-size: 15px;
+        line-height: 0px;
+        letter-spacing: 2px;
+        top: 45%;
+        left: 5%;
+        text-transform: uppercase;
+    }
+
+    .itemText {
+        position: absolute;
+        color: white;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 16px;
+        left: 5%;
+        top: 50%;
+        width: 80%;
+    }
+
+    .information2 {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    .text-block {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding:0px 10px;
+    }
+    .button-tools {
+        margin-top: 15px;
+        width: 130px;
+        height: 40px;
+        font-size: 13px;
+    }
+
+    .button-help {
+        width: 120px;
+        height: 36px;
+        font-size: 12px;
+        gap: 4px;
+    }
+
+.clients{
+    margin-bottom: 0px;
+    padding: 20px 0;
+}
+
+.clientText {
+    padding-left: 30px;
+}
+
+    .svgClient {
+        width: 100px;
+        height: 30px;
+    }
+
+.footer {
+    padding: 0px;
+    height: 560px;
+}
+
+.footer-navigater-wrapper {
+    display: flex;
+    margin-right: 92px;
+    gap: 20px;
+    padding-bottom: 20px;
+}
+
+    .footer-wrapper-items{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-info {
+        align-items: center;
+        padding-bottom: 20px;
+    }
+
+    .subTitle-footer{
+        font-size: 12px;
+    }
+
+    .footerText {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .subTitle-mini {
+        margin: 0;
+        padding: 10px 0;
+    }
+
+    .subTitle-info-footer {
+        margin: 0;
+    }
+
+    .footerInput {
+        width: 100%;
+    }
+
+    .footer-small {
+        padding-top: 10px;
+    }
+
+.small {
+    font-size: 12px;
+}
+
+.link-container {
+   padding: 40px 0;
+}
+
+    .navBar {
+        margin-right: 0px;
+    }
 }
