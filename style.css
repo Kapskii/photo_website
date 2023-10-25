@@ -408,7 +408,7 @@ a:hover {
     border-bottom: 2px solid #9e9e9e;
 }
 
-.footerText{
+.footerText {
     width: 50%;
 }
 
@@ -605,6 +605,7 @@ a:hover {
         justify-content: center;
         position: relative;
         margin-bottom: 71px;
+        padding: 0 10px;
     }
 
     .title {
@@ -660,14 +661,16 @@ a:hover {
         align-items: center;
         justify-content: center;
     }
+
     .text-block {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         width: 100%;
-        padding:0px 10px;
+        padding: 0px 10px;
     }
+
     .button-tools {
         margin-top: 15px;
         width: 130px;
@@ -682,33 +685,33 @@ a:hover {
         gap: 4px;
     }
 
-.clients{
-    margin-bottom: 0px;
-    padding: 20px 0;
-}
+    .clients {
+        margin-bottom: 0px;
+        padding: 20px 0;
+    }
 
-.clientText {
-    padding-left: 30px;
-}
+    .clientText {
+        padding-left: 30px;
+    }
 
     .svgClient {
         width: 100px;
         height: 30px;
     }
 
-.footer {
-    padding: 0px;
-    height: 560px;
-}
+    .footer {
+        padding: 0px;
+        height: 560px;
+    }
 
-.footer-navigater-wrapper {
-    display: flex;
-    margin-right: 92px;
-    gap: 20px;
-    padding-bottom: 20px;
-}
+    .footer-navigater-wrapper {
+        display: flex;
+        margin-right: 92px;
+        gap: 20px;
+        padding-bottom: 20px;
+    }
 
-    .footer-wrapper-items{
+    .footer-wrapper-items {
         flex-direction: column;
         align-items: center;
     }
@@ -718,7 +721,7 @@ a:hover {
         padding-bottom: 20px;
     }
 
-    .subTitle-footer{
+    .subTitle-footer {
         font-size: 12px;
     }
 
@@ -745,13 +748,13 @@ a:hover {
         padding-top: 10px;
     }
 
-.small {
-    font-size: 12px;
-}
+    .small {
+        font-size: 11px;
+    }
 
-.link-container {
-   padding: 40px 0;
-}
+    .link-container {
+        padding: 40px 0;
+    }
 
     .navBar {
         margin-right: 0px;
