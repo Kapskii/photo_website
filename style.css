@@ -146,7 +146,7 @@ a:hover {
 
 .swiper-backface-hidden .swiper-slide {
     display: flex;
-    width: 1440px;
+    width: 100%;
     align-items: flex-end;
     justify-content: center;
 }
@@ -238,9 +238,11 @@ a:hover {
 
 .wraper {
     display: flex;
-    width: 1200px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
-    margin: 120px;
+    padding-bottom: 30px;
 }
 
 .item {
@@ -299,24 +301,27 @@ a:hover {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
     width: 100%;
-    height: 540px;
-    flex-shrink: 0;
+    height: 650px;
 }
 
 .text-block {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 600px;
-    height: 314px;
-    margin-top: 113px;
-    margin-left: 60px;
+    width: 100%;
+    padding-top: 60px;
+    padding-left: 60px;
+    padding-right: 60px;
 
+}
+
+.imageCameraSmall{
+    display: none;
 }
 
 .imageCamera {
     background: url(./assets/textBlock.jpeg), lightgray 50% / cover no-repeat;
-    background-size: contain;
+    background-size: cover;
 }
 
 .clients {
@@ -328,9 +333,7 @@ a:hover {
 }
 
 .client-wrapper {
-    padding-left: 16px;
-    padding-right: 16px;
-    width: 1200px;
+    width: 100%;
     height: max-content;
     display: flex;
     justify-content: center;
@@ -456,16 +459,18 @@ a:hover {
 
 
 /* для планшета */
-@media only screen and (min-width: 577px) and (max-width: 992px) {
+@media only screen and (max-width: 960px) {
 
 
     .header-wrapper {
         display: flex;
         width: 100%;
-        height: 90px;
+        height: 100px;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        padding-bottom: 20px;
+        padding-top: 18px;
     }
 
     .image {
@@ -483,20 +488,21 @@ a:hover {
 
 
     .inform-wrapper {
-        margin-bottom: 20px;
+        display: block;
+        padding-top: 40px;
     }
 
     .item {
         display: block;
-        width: 364px;
-        height: 365px;
+        width: 100%;
+        height: 100%;
         position: relative;
     }
 
     .itemTitle {
         position: absolute;
         color: white;
-        font-size: 14px;
+        font-size: 50px;
         line-height: 20px;
         letter-spacing: 2px;
         top: 50%;
@@ -507,10 +513,10 @@ a:hover {
     .itemText {
         position: absolute;
         color: #C0C0C0;
-        font-size: 14px;
+        font-size: 20px;
         font-style: normal;
         font-weight: 400;
-        line-height: 20px;
+        line-height: 30px;
         left: 5%;
         top: 57%;
         width: 90%;
@@ -520,26 +526,32 @@ a:hover {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        width: 312px;
-        margin-top: 113px;
-        margin-left: 40px;
-        box-sizing: border-box;
+        width: 100%;
+        padding-right: 50px;
+    }
+
+    .clients {
+        display: flex;
+        width: 100%;
+        height: max-content;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
     }
 
     .client-wrapper {
-        padding-left: 16px;
-        padding-right: 16px;
         width: 100%;
-        height: max-content;
+        height: 100%;
         display: flex;
-        justify-content: center;
+        flex-direction: row;
         align-items: center;
-        flex-direction: column;
+        justify-content: space-around;
     }
 
     .logo-wrapper {
         display: flex;
-        gap: 23px;
+        flex-direction: column;
+        gap: 45px;
         margin-top: 40px;
         padding: 40px;
         align-items: center;
@@ -559,6 +571,23 @@ a:hover {
         ;
     }
 }
+
+
+.footer-lines {
+    align-items: center;
+    padding: 10px;
+    border-top: 2px solid #9e9e9e;
+    border-bottom: 2px solid #9e9e9e;
+}
+
+/* .information2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    width: 100%;
+    height: 100%;
+} */
+
 
 
 
