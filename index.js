@@ -13,7 +13,7 @@ new Swiper('.swiper', {
 
 
 $(document).ready(function () {
-    $('.headerBurger').click(function (event) {
+    $('.headerBurger, .aLink').click(function (event) {
         $('.headerBurger, .navWrapper').toggleClass('active');
         $('body').toggleClass('lock');
     });
