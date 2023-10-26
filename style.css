@@ -49,6 +49,7 @@ a:hover {
 
 .header::before {
     content: '';
+    opacity: 0.4;
     position: absolute;
     top: 0;
     left: 0;
@@ -867,6 +868,7 @@ a:hover {
     .subTitle-footer {
         font-size: 12px;
     }
+
 
     .footerText {
         width: 100%;
