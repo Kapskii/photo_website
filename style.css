@@ -45,11 +45,11 @@ a:hover {
     top: 0;
     left: 0;
     z-index: 50;
+    backdrop-filter: blur(7px);
 }
 
 .header::before {
     content: '';
-    opacity: 0.4;
     position: absolute;
     top: 0;
     left: 0;
@@ -57,6 +57,7 @@ a:hover {
     height: 100%;
     background-color: #000;
     z-index: 2;
+    backdrop-filter: blur(5px);
 }
 
 .header-body {
@@ -96,8 +97,8 @@ a:hover {
     height: 42px;
     border-radius: 14px;
     border: none;
-    background-color: #828282;
-    color: #000;
+    background-color: #454545;
+    color: #fff;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -111,6 +112,7 @@ a:hover {
 
 .button:hover {
     background-color: white;
+    color:#000;
 }
 
 .button-help {
@@ -504,6 +506,121 @@ a:hover {
 /* для планшета */
 @media only screen and (max-width: 960px) {
 
+    body.lock {
+        overflow: hidden;
+    }
+
+    .header-body {
+        height: 50px;
+    }
+
+    .logo {
+        width: 100px;
+    }
+
+    .header::before {
+        content: '';
+        opacity: 0.4;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #000;
+        z-index: 2;
+    }
+
+    .headerBurger {
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 20px;
+        position: relative;
+        z-index: 3;
+    }
+
+    .headerBurger::before,
+    .headerBurger::after {
+        content: '';
+        background-color: #fff;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        left: 0;
+        transition: all 0.3s ease 0s;
+    }
+
+    .headerBurger::before {
+        top: 0;
+    }
+
+    .headerBurger::after {
+        bottom: 0;
+    }
+
+    .headerBurger span {
+        position: absolute;
+        background-color: #fff;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        top: 9px;
+        transition: all 0.3s ease 0s;
+    }
+
+    
+    .headerBurger.active::before {
+        transform: rotate(45deg);
+        top: 9px;
+    }
+
+    .headerBurger.active::after {
+        transform: rotate(-45deg);
+        bottom: 9px;
+    }
+
+    .headerBurger.active span {
+        transform: scale(0);
+    }
+
+
+    .navWrapper {
+        position: fixed;
+        top: -100%;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: gray;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        transition: all 0.3s ease 0s;
+        overflow: auto;
+    }
+
+    .navWrapper.active {
+        top: 0;
+    }
+
+    .navBar {
+        display: block;
+    }
+
+    .navLink li {
+        margin: 0px 0px 25px 0px;
+        text-decoration: none;
+        list-style: none;
+        color: black;
+        transition: 0.4s;
+        font-size: 35px;
+    }
+
+.navLink li:hover {
+    color: white;
+}
+
 
     .header-wrapper {
         display: flex;
@@ -625,11 +742,14 @@ a:hover {
 
 
 /* для мобильного телефона */
+
+
 @media only screen and (max-width: 576px) {
 
     body.lock {
         overflow: hidden;
     }
+
 
     .header-body {
         height: 50px;
@@ -699,7 +819,8 @@ a:hover {
         left: 0;
         width: 100%;
         height: 100%;
-        background-color: gray;
+        background-color: rgba(208, 208, 208, 0.2);
+        backdrop-filter: blur(5px);
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -717,23 +838,18 @@ a:hover {
         display: block;
     }
 
-    .navBar li {
+    .navLink li {
         margin: 0px 0px 20px 0px;
-        font-size: 25px;
-    }
-
-    a:active,
-    a {
         text-decoration: none;
         list-style: none;
         color: black;
         transition: 0.4s;
+        font-size: 25px;
     }
 
-    .logo {
-        z-index: ;
-    }
-
+.navLink li:hover {
+    color: white;
+}
 
     .image {
         width: 100%;
