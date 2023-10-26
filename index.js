@@ -10,3 +10,11 @@ new Swiper('.swiper', {
     },
     speed: 1000,
 });
+
+
+$(document).ready(function () {
+    $('.headerBurger').click(function (event) {
+        $('.headerBurger, .navWrapper').toggleClass('active');
+        $('body').toggleClass('lock');
+    });
+});
