@@ -5,7 +5,6 @@
     font-family: 'Poppins', sans-serif;
 }
 
-
 body {
     background: black;
     overflow-x: hidden;
@@ -110,7 +109,7 @@ a:hover {
 
 .button:hover {
     background-color: white;
-    color:#000;
+    color: #000;
 }
 
 .button-help {
@@ -501,7 +500,7 @@ a:hover {
 
 
 
-/* для планшета */
+/*---------------------------------------------------------------------стили для планшета----------------------------------------------------------------------- */
 @media only screen and (max-width: 960px) {
 
     body.lock {
@@ -567,7 +566,7 @@ a:hover {
         transition: all 0.3s ease 0s;
     }
 
-    
+
     .headerBurger.active::before {
         transform: rotate(45deg);
         top: 9px;
@@ -589,7 +588,7 @@ a:hover {
         left: 0;
         width: 100%;
         height: 100%;
-        background-color: rgba(255, 255, 255, 0.6);
+        background-color: rgba(0, 0, 0, 0.7);
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -611,14 +610,14 @@ a:hover {
         margin: 0px 0px 25px 0px;
         text-decoration: none;
         list-style: none;
-        color: black;
+        color: #fff;
         transition: 0.4s;
         font-size: 35px;
     }
 
-.navLink li:hover {
-    color: white;
-}
+    .navLink li:hover {
+        color: white;
+    }
 
 
     .header-wrapper {
@@ -731,7 +730,6 @@ a:hover {
     }
 }
 
-
 .footer-lines {
     align-items: center;
     padding: 10px;
@@ -740,7 +738,7 @@ a:hover {
 }
 
 
-/* для мобильного телефона */
+/*-------------------------------------------------------------стили для мобильного телефона-------------------------------------------------------------------- */
 
 
 @media only screen and (max-width: 576px) {
@@ -795,7 +793,7 @@ a:hover {
         transition: all 0.3s ease 0s;
     }
 
-    
+
     .headerBurger.active::before {
         transform: rotate(45deg);
         top: 9px;
@@ -817,7 +815,7 @@ a:hover {
         left: 0;
         width: 100%;
         height: 100%;
-        background-color: rgba(255, 255, 255, 0.6);
+        background-color: rgba(0, 0, 0, 0.7);
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -839,14 +837,14 @@ a:hover {
         margin: 0px 0px 20px 0px;
         text-decoration: none;
         list-style: none;
-        color: black;
+        color: #fff;
         transition: 0.4s;
         font-size: 25px;
     }
 
-.navLink li:hover {
-    color: white;
-}
+    .navLink li:hover {
+        color: white;
+    }
 
     .image {
         width: 100%;
