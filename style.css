@@ -533,7 +533,6 @@ a:hover {
         width: 30px;
         height: 20px;
         position: relative;
-
         z-index: 3;
     }
 
@@ -584,9 +583,9 @@ a:hover {
 
     .navWrapper {
         position: fixed;
-        top: -100%;
-        left: 0;
-        width: 100%;
+        top: 0;
+        right: -100%;
+        width: 35%;
         height: 100%;
         background-color: rgba(0, 0, 0, 0.7);
         display: flex;
@@ -599,11 +598,12 @@ a:hover {
     }
 
     .navWrapper.active {
-        top: 0;
+        right: 0;
     }
 
     .navBar {
         display: block;
+        margin: 0;
     }
 
     .navLink li {
@@ -612,7 +612,7 @@ a:hover {
         list-style: none;
         color: #fff;
         transition: 0.4s;
-        font-size: 35px;
+        font-size: 25px;
     }
 
     .navLink li:hover {
@@ -811,9 +811,9 @@ a:hover {
 
     .navWrapper {
         position: fixed;
-        top: -100%;
-        left: 0;
-        width: 100%;
+        top: 0;
+        right: -100%;
+        width: 50%;
         height: 100%;
         background-color: rgba(0, 0, 0, 0.7);
         display: flex;
@@ -826,11 +826,12 @@ a:hover {
     }
 
     .navWrapper.active {
-        top: 0;
+        right: 0;
     }
 
     .navBar {
         display: block;
+        margin: 0;
     }
 
     .navLink li {
@@ -839,7 +840,7 @@ a:hover {
         list-style: none;
         color: #fff;
         transition: 0.4s;
-        font-size: 25px;
+        font-size: 15px;
     }
 
     .navLink li:hover {
